@@ -63,5 +63,20 @@ def health():
     try:
         r.ping()
         return "ok", 200
-    ex
+    except Exception:
+        return "redis not reachable", 500
+
+
+@app.route("/metrics")
+def metrics():
+    return f"""
+# HELP auth_events_total Total auth events
+# TYPE auth_events_total counter
+auth_events_total{{result="success"}} {auth_success}
+auth_events_total{{result="fail"}} {auth_fail}
+""", 200, {"Content-Type": "text/plain; version=0.0.4"}
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
 
