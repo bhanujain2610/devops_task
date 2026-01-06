@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+
+  entitlement:
+    build: ./services/entitlement
+    container_name: entitlement
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+    ports:
+      - "8081:8080"
+
+  adapter:
+    build: ./services/adapter
+    container_name: adapter
+    environment:
+      - ENTITLEMENT_URL=http://entitlement:8080
+    depends_on:
+      - entitlement
+    ports:
+      - "8080:8080"
+
