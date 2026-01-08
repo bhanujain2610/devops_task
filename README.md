@@ -52,7 +52,7 @@ make logs
 ### Stop stack
 make down 
 
-### Smoke Test Coverage
+## Smoke Test Coverage
 
 The smoke test validates:
 
@@ -68,13 +68,18 @@ operator-adapter logs
 
 entitlement-server logs
 
-### Observability
+## Observability
 
 Services emit logs with correlation IDs
-
 Entitlement service exposes a /metrics endpoint in Prometheus format
-
 No Prometheus server is deployed to keep the setup lightweight.
+
+### CI PIPELINE
+
+All trigress would be made to the main branch.
+Added start up stack 
+Added make smoke test
+Added make stack down
 
 ### Debug Bundle
 
