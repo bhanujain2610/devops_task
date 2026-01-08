@@ -23,6 +23,6 @@ jobs:
       - name: Generate debug bundle
         run: make debug-bundle || true
 
-      - name: Tear down stack
-        if: always()
-        run: make down
+     # - name: Tear down stack
+     #   if: always()
+     #   run: make down
