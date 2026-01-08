@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE                     COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+02e2f4933104   devops_task-adapter       "python app.py"          7 minutes ago    Up 7 minutes    0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   adapter
+9763ca3682b7   devops_task-entitlement   "python app.py"          7 minutes ago    Up 7 minutes    0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp   entitlement
+d180c6f6f975   redis:7-alpine            "docker-entrypoint.s…"   10 minutes ago   Up 10 minutes   0.0.0.0:6379->6379/tcp, [::]:6379->6379/tcp   redis

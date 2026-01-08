@@ -1,0 +1,11 @@
+adapter  |  * Serving Flask app 'app'
+adapter  |  * Debug mode: off
+adapter  | 2026-01-07 17:08:26,453 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+adapter  |  * Running on all addresses (0.0.0.0)
+adapter  |  * Running on http://127.0.0.1:8080
+adapter  |  * Running on http://172.18.0.4:8080
+adapter  | 2026-01-07 17:08:26,453 INFO [33mPress CTRL+C to quit[0m
+adapter  | 2026-01-07 17:08:31,481 INFO Sending event AUTH_SUCCESS correlation_id=147cf634-0238-4ff3-9ed2-28fe223f4a27
+adapter  | 2026-01-07 17:08:31,488 INFO 172.18.0.1 - - [07/Jan/2026 17:08:31] "POST /simulate/auth-success HTTP/1.1" 200 -
+adapter  | 2026-01-07 17:08:32,536 INFO Sending event AUTH_FAIL correlation_id=4008de9b-aff6-4a0b-9d02-56a589e63007
+adapter  | 2026-01-07 17:08:32,540 INFO 172.18.0.1 - - [07/Jan/2026 17:08:32] "POST /simulate/auth-fail HTTP/1.1" 200 -

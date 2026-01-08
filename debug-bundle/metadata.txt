@@ -1,0 +1,7 @@
+Timestamp: 2026-01-07_22-45-56
+
+Correlation IDs found in logs:
+debug-bundle/logs/adapter.log:adapter  | 2026-01-07 17:08:31,481 INFO Sending event AUTH_SUCCESS correlation_id=147cf634-0238-4ff3-9ed2-28fe223f4a27
+debug-bundle/logs/adapter.log:adapter  | 2026-01-07 17:08:32,536 INFO Sending event AUTH_FAIL correlation_id=4008de9b-aff6-4a0b-9d02-56a589e63007
+debug-bundle/logs/entitlement.log:entitlement  | 2026-01-07 17:08:31,487 INFO Auth event processed imsi=001010000000001 event=AUTH_SUCCESS correlation_id=147cf634-0238-4ff3-9ed2-28fe223f4a27
+debug-bundle/logs/entitlement.log:entitlement  | 2026-01-07 17:08:32,539 INFO Auth event processed imsi=001010000000001 event=AUTH_FAIL correlation_id=4008de9b-aff6-4a0b-9d02-56a589e63007
