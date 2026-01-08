@@ -9,3 +9,4 @@ adapter  | 2026-01-07 17:08:31,481 INFO Sending event AUTH_SUCCESS correlation_i
 adapter  | 2026-01-07 17:08:31,488 INFO 172.18.0.1 - - [07/Jan/2026 17:08:31] "POST /simulate/auth-success HTTP/1.1" 200 -
 adapter  | 2026-01-07 17:08:32,536 INFO Sending event AUTH_FAIL correlation_id=4008de9b-aff6-4a0b-9d02-56a589e63007
 adapter  | 2026-01-07 17:08:32,540 INFO 172.18.0.1 - - [07/Jan/2026 17:08:32] "POST /simulate/auth-fail HTTP/1.1" 200 -
+ 
