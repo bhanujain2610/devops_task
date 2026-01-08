@@ -3,18 +3,18 @@
 This repository provides a **reproducible local testbed** demonstrating:
 - Multi-service deployment using Docker Compose
 - Auth event processing → entitlement decision
-- Deterministic smoke tests
+- Deterministic smoke test
 - Basic observability (logs + metrics)
-- Debug bundle generation for troubleshooting
+- Debug bundle zip file generation for troubleshooting
 
 ---
 
 ## Architecture
 
 **Services:**
-- **operator-adapter** – simulates operator auth events
-- **entitlement-server** – processes events and stores entitlement state
-- **redis** – state storage
+- **operator-adapter** – this service simulates operator auth events
+- **entitlement-server** – this processes events and stores entitlement state
+- **redis** – it is the state storage
 
 **Flow:**
 
@@ -53,7 +53,6 @@ make logs
 make down 
 
 ## Smoke Test Coverage
-
 The smoke test validates:
 
 Stack health (/healthz)
