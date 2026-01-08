@@ -23,7 +23,5 @@ jobs:
       - name: Run smoke tests
         run: make smoke
 
-      - name: Stop stack
-        if: always()
-        run: docker compose down
+
 
