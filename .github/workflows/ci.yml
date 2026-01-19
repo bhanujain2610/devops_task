@@ -1,4 +1,4 @@
-name: CI_devops_task1
+name: CI_devops_task12
 
 on:
   push:
